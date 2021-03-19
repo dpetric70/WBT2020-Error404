@@ -23,8 +23,8 @@ body{
     text-align: center;
 }
 #logo-img{
-    height: 450px;
-    width: 450px;
+    height: 300px;
+    width: 300px;
 }
 h1{
     text-align: center;
@@ -36,11 +36,8 @@ h1{
     padding-top: 20px;
     font-family: 'Josefin Sans', sans-serif;
 }
-main{
-    padding-top: 50px;
-}
 .rotate{
-    animation: rotation 15s infinite linear;
+    animation: rotation 35s infinite linear;
 
 }
 @keyframes rotation{
@@ -52,4 +49,14 @@ main{
     }
   }
 
-
+#img-history{
+    margin: 50px 0px 0px 50px;
+    height: 200px;
+    width: 200px;
+}
+.p-history{
+    font-family: 'Josefin Sans', sans-serif;
+    border-top: 2px dashed;
+    border-color: blue !important;
+    margin:0; padding: 30px;
+}

@@ -306,3 +306,21 @@ h1{
     border: none !important;
     box-shadow: none !important;
 }
+.adventage-table{
+  color:white;
+  background-image: linear-gradient(#1871c4,#1c5c2d );
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 14pt;
+  
+  margin-left: auto;
+  margin-right: auto;
+}
+.adventage-table th{
+  text-align: center;
+}
+.adventage-table th, td{
+  border: 1px solid #2da883;
+  
+  padding: 5px 10px 5px 10px;
+  width: 50%;
+}

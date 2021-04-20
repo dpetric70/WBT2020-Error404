@@ -26,18 +26,6 @@ window.onload = function () {
                 { label: "Litvanija", y: 53},
                 { label: "Češka", y: 55},
                 { label: "Slovačka", y: 50 },
-                /*{label: "Malta", y: 49 },
-                { label: "Španija", y: 45},
-                { label: "Poljska", y: 40 },
-                { label: "Slovenija", y: 39 },
-                { label: "Mađarska", y: 39 },
-                { label: "Hrvatska", y: 32 },
-                { label: "Italija", y: 30 },
-                { label: "Portugal", y: 31 },
-                { label: "Kipar", y: 27},
-                { label: "Grčka", y: 24 },
-                { label: "Rumunija", y: 8 },
-                { label: "Bugarska", y: 6}, */
             ]
         }]
     });

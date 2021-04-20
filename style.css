@@ -325,3 +325,38 @@ h1{
   width: 50%;
 }
 
+.about{
+  height: 500px;
+  width: 100%;
+  border-bottom: 1px solid white;
+}
+.left{
+  width: 50%;
+  height: 100%;
+  float:left;
+}
+.right{
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+.main{
+  font-family: 'Josefin Sans', sans-serif;
+  color:white;
+  padding: 20px 0 20px 0;
+}
+.main p{
+  font-family: 'Inconsolata', monospace;
+  font-size: 20px;
+}
+.main a{
+  color:white;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: 'Bebas Neue', cursive;
+}
+.main a:hover{
+  text-decoration: none;
+  text-shadow: black 2px 5px;
+  color:white
+}

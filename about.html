@@ -16,55 +16,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous">
-
+    <meta name="Author" content="Danijela Petrić">
+    <meta name="Author" content="Stefan Debeljak">
+    <meta name="Author" content="Aleksa Makljenović">
     <title>WBT2020-Error404</title>
 </head>
 
 <body>
 
-    <!--kreiranje navbara-->
-    <div id="navbck" class="col-xl-12 col-lg-12 col-md-6 col-sm-3 pr-0">
-        <div class="pos-f-t">
-            <div class="collapse" id="navbarToggleExternalContent">
-                <div class="p-4 col-xl-12 col-lg-12 col-md-6 col-sm-3">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
 
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Početna</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="history.html">Istorija elektronskog bankarstva</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="praksa.html">Elektronsko bankarstvo u praksi</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="advantages.html">Prednosti i mane</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="statistics.html">Statistički podaci</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">O nama</a>
-                        </li>
-                    </ul>
-                </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+            <div class="navbar-nav py-1">
+                <a class="nav-link py-0" href="index.html">Početna</a>
+                <a class="nav-link py-0" href="history.html">Istorija elektronskog bankarstva</a>
+                <a class="nav-link py-0" href="praksa.html">Elektronsko bankarstvo u praksi</a>
+                <a class="nav-link py-0" href="advantages.html">Prednosti i mane</a>
+                <a class="nav-link py-0" href="statistics.html">Statistički podaci</a>
+                <a class="nav-link py-0" href="about.html">O nama</a>
             </div>
         </div>
-
-        <nav class="navbar navbar-dark ">
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </nav>
-    </div>
-    </div>
+    </nav>
 
     <div class="main container">
-        <div class="about">
-            <div class="left">
+        <div class="about row">
+            <div class="left col-lg-6 col-md-3 col-sm-12">
                 <a href="#dn" class="a-about" data-toggle="collapse">Danijela Petrić 70/2018</a>
                 <div class="collapse" id="dn">
                     <p>Datum rođenja: 22.04.1999.</p>
@@ -76,17 +56,17 @@
                     </p>
                 </div>
             </div>
-            <div class="right">
-                <img src="images/dn.jpg" alt="" style="height: 100%; float:right;">
+            <div class="right col-lg-6 col-md-3 col-sm-12">
+                <img src="images/dn.jpg" alt="" style="height: 500px; float:right;">
             </div>
         </div>
 
         <br>
-        <div class="about">
-            <div class="left">
-                <img src="images/st.jpg" alt="" style="height: 100%;">
+        <div class="about row">
+            <div class="left col-lg-6 col-md-3 col-sm-12">
+                <img src="images/st.jpg" alt="" style="height: 500px;">
             </div>
-            <div class="right">
+            <div class="right col-lg-6 col-md-3 col-sm-12">
                 <a href="#st" class="a-about" data-toggle="collapse">Stefan Debeljak 92/2018</a>
                 <div class="collapse" id="st">
                     <p>Datum rođenja: 12.11.1999.</p>
@@ -102,8 +82,8 @@
         </div>
 
         <br>
-        <div class="about">
-            <div class="left">
+        <div class="about row">
+            <div class="left col-lg-6 col-md-3 col-sm-12">
                 <a href="#al" class="a-about" data-toggle="collapse">Aleksa Makljenović 98/2018</a>
                 <div class="collapse" id="al">
                     <p>Datum rođenja: 11.12.1999.</p>
@@ -115,12 +95,12 @@
                     </p>
                 </div>
             </div>
-            <div class="right">
-                <img src="images/al.jpg" alt="" style="height: 100%; float:right;">
+            <div class="right col-lg-6 col-md-3 col-sm-12">
+                <img src="images/al.jpg" alt="" style="height: 500px; float:right;">
             </div>
         </div>
 
-
+       
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

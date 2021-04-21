@@ -5,58 +5,38 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <script src="myscript.js"></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous">
     <title>Elektronsko bankarstvo u praksi</title>
 </head>
 
 <body>
 
-    <div id="navbck" class="col-xl-12 col-lg-12 col-md-6 col-sm-3 pr-0">
-        <div class="pos-f-t">
-            <div class="collapse" id="navbarToggleExternalContent">
-                <div class="p-4 col-xl-12 col-lg-12 col-md-6 col-sm-3">
 
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Početna</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="history.html">Istorija elektronskog bankarstva</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="praksa.html">Elektronsko bankarstvo u praksi</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="advantages.html">Prednosti i mane</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="statistics.html">Statistički podaci</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">O nama</a>
-                        </li>
-                    </ul>
-                </div>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+            <div class="navbar-nav py-1">
+                <a class="nav-link py-0" href="index.html">Početna</a>
+                <a class="nav-link py-0" href="history.html">Istorija elektronskog bankarstva</a>
+                <a class="nav-link py-0" href="praksa.html">Elektronsko bankarstvo u praksi</a>
+                <a class="nav-link py-0" href="advantages.html">Prednosti i mane</a>
+                <a class="nav-link py-0" href="statistics.html">Statistički podaci</a>
+                <a class="nav-link py-0" href="about.html">O nama</a>
             </div>
         </div>
+    </nav>
 
-        <nav class="navbar navbar-dark ">
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </nav>
-    </div>
-    </div>
-
-    
     <div class="container mt-5">
         <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
@@ -109,11 +89,11 @@
                 Primer transakcije
             </button>
             <div class="collapse mt-3" id="collapseExample">
-                <form>
+                
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="inputIme">Ime</label>
-                            <input type="text" class="form-control" id="inputIme">
+                                <input name="fname" type="text" class="form-control" id="inputIme">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputPrezime">Prezime</label>
@@ -149,7 +129,7 @@
                             <label for="inputBroj">Broj kartice</label>
                             <input type="text" class="form-control" id="inputBroj">
                         </div>
-                        
+
                         <div class="form-group col-md-2">
                             <label for="inputCCV">CCV</label>
                             <input type="text" class="form-control" id="inputCCV">
@@ -167,8 +147,8 @@
                             </label>
                         </div>
                     </div>
-                    <button type="submit" class="btn">Izvrši transakciju</button>
-                </form>
+                    <button onclick="myFunction()" class="btn">Izvrši transakciju</button>
+                    <p id="potvrda" class="text-danger"></p>
             </div>
         </div>
 
@@ -178,18 +158,29 @@
         <h2>Zašto treba koristiti ovakav vid transakcije?</h2>
         <div class="row">
             <div class="col-lg-4 my-3">
-               <p style="font-size: 24pt;"> <i class="fas fa-user-clock"></i></p>
-               <h4>Ušteda vremena</h4>
-               Elektronsko bankarstvo vam može uštedeti vreme, jer možete bez čekanja obaviti većinu transakcija zbog kojih inače idete u banku. Takođe, usluge koje se obavljaju putem elektronskog bankarstva su oslobođene provizija od strane većine banaka, ili su te provizije značajno manje od onih koje se plaćaju na šalteru.
+                <p style="font-size: 24pt;"> <i class="fas fa-user-clock"></i></p>
+                <h4>Ušteda vremena</h4>
+                Elektronsko bankarstvo vam može uštedeti vreme, jer možete bez čekanja obaviti većinu transakcija zbog
+                kojih inače idete u banku. Takođe, usluge koje se obavljaju putem elektronskog bankarstva su oslobođene
+                provizija od strane većine banaka, ili su te provizije značajno manje od onih koje se plaćaju na
+                šalteru.
             </div>
             <div class="col-lg-4 my-3">
                 <p style="font-size: 24pt;"><i class="fas fa-user-shield"></i></p>
                 <h4>Bezbednost</h4>
-                Ovaj način plaćanja je sigurniji nego da sa sobom nosite novčanik. Za sve elektronske transakcije ostaje zapis o tome sa koje elektronske adrese se pristupilo računu i gde je novac otišao. Pored toga, identitet osobe koja koristi ovu uslugu proverava se na nekoliko načina, tako da je praktično zloupotreba nemoguća.            </div>
+                Ovaj način plaćanja je sigurniji nego da sa sobom nosite novčanik. Za sve elektronske transakcije ostaje
+                zapis o tome sa koje elektronske adrese se pristupilo računu i gde je novac otišao. Pored toga,
+                identitet osobe koja koristi ovu uslugu proverava se na nekoliko načina, tako da je praktično
+                zloupotreba nemoguća.
+            </div>
             <div class="col-lg-4 my-3">
                 <p style="font-size: 24pt;"><i class="fas fa-globe"></i></p>
                 <h4>Mobilnost</h4>
-                Računarom, tabletom ili mobilnim telefonom možete obavljati sve finansijske transakcije – prebacivanje novca sa računa na račun, plaćanje računa koje ste prethodno definisali, menjačke poslove, imati uvid u stanje i promene na računu kao i evidenciju transakcija, da vidite stanje po kreditu, i to sa bilo kog mesta…            </div>
+                Računarom, tabletom ili mobilnim telefonom možete obavljati sve finansijske transakcije – prebacivanje
+                novca sa računa na račun, plaćanje računa koje ste prethodno definisali, menjačke poslove, imati uvid u
+                stanje i promene na računu kao i evidenciju transakcija, da vidite stanje po kreditu, i to sa bilo kog
+                mesta…
+            </div>
         </div>
     </div>
 
@@ -200,7 +191,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
-
+    
 
 </body>
 

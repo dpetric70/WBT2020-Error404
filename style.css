@@ -5,7 +5,8 @@
 }
 .nav-link{
   position: relative;
-  padding:0px 10px 0px 10px ;
+  padding:0px 15px 0px 15px;
+  color:white;
 }
 .nav-link:after {
   content: '';
@@ -15,13 +16,16 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #0087ca;
+  background-color: #42f557;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
 .nav-link:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+.nav-link:hover{
+  color:#42f557;
 }
 .navbar-nav{
     font-family: 'Josefin Sans' , sans-serif;
@@ -90,7 +94,9 @@ h1{
     border-color: hsl(calc(var(--hue)*360/20),90%,65%);
     padding: 1rem;
     margin: 2rem 0;
+    box-sizing:unset;
   }
+  
   .li-timeline::before {
     content: "";
     background-color: inherit;
@@ -341,6 +347,8 @@ h1{
 }
 iframe{
   border-radius: 5%;
+  width: 100%;
+  height:500px;
 }
 .about{
   width: 100%;
@@ -377,6 +385,20 @@ iframe{
   color:white
 }
 
+.ser-cont{
+  color:white;
+  font-size: 16pt;
+  font-family: 'Inconsolata', monospace;
+}
+.ser-cont .row{
+  border-top: 2px solid #42f557;
+  padding-top: 10px;
+}
+
+b{
+  color:#42f557
+}
+
 .circles{
   position: absolute;
   top: 0;
@@ -392,7 +414,7 @@ iframe{
   list-style: none;
   width: 20px;
   height: 20px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 158, 32, 0.3);
   animation: animate 25s linear infinite;
   bottom: -150px;
   

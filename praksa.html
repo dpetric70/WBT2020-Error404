@@ -20,7 +20,7 @@
 <body>
 
 
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar sticky-top navbar-expand-lg bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -28,10 +28,10 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
             <div class="navbar-nav py-1">
                 <a class="nav-link py-0" href="index.html">Početna</a>
-                <a class="nav-link py-0" href="history.html">Istorija elektronskog bankarstva</a>
-                <a class="nav-link py-0" href="praksa.html">Elektronsko bankarstvo u praksi</a>
-                <a class="nav-link py-0" href="advantages.html">Prednosti i mane</a>
-                <a class="nav-link py-0" href="statistics.html">Statistički podaci</a>
+                <a class="nav-link py-0" href="history.html">Istorija</a>
+                <a class="nav-link py-0" href="praksa.html">Primena</a>
+                <a class="nav-link py-0" href="statistics.html">Korišćenje</a>
+                <a class="nav-link py-0" href="services.html">Servisi</a>
                 <a class="nav-link py-0" href="about.html">O nama</a>
             </div>
         </div>
@@ -84,72 +84,84 @@
             <hr class="my-4">
             <p>Banka svojom pojavom na internetu dokazuje svoje konkurentne mogućnosti i svoj razvoj kao solidna,
                 stabilna i tehnološki napredna firma.</p>
+
+            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseExample2"
+                aria-expanded="false" aria-controls="collapseExample2">
+                Uputstvo za korišćenje
+            </button>
+
             <button class="btn" type="button" data-toggle="collapse" data-target="#collapseExample"
                 aria-expanded="false" aria-controls="collapseExample">
                 Primer transakcije
             </button>
-            <div class="collapse mt-3" id="collapseExample">
-                
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="inputIme">Ime</label>
-                                <input name="fname" type="text" class="form-control" id="inputIme">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="inputPrezime">Prezime</label>
-                            <input type="text" class="form-control" id="inputPrezime">
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-4">
-                            <label for="inputAdresa">Adresa</label>
-                            <input type="text" class="form-control" id="inputAdresa">
-                        </div>
-                        <div class="form-group col-md-4">
-                            <label for="inputGrad">Grad</label>
-                            <input type="text" class="form-control" id="inputGrad">
-                        </div>
-                        <div class="form-group col-md-4">
-                            <label for="inputPostanskiBroj">Postanski broj</label>
-                            <input type="text" class="form-control" id="inputPostanskiBroj">
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-4">
-                            <label for="inputNacin">Način plaćanja</label>
-                            <select id="inputNacin" class="form-control">
-                                <option selected>Odaberite</option>
-                                <option>VISA</option>
-                                <option>MASTER CARD</option>
-                                <option>PAYPAL</option>
-                                <option>MAESTRO</option>
-                            </select>
-                        </div>
-                        <div class="form-group col-md-4">
-                            <label for="inputBroj">Broj kartice</label>
-                            <input type="text" class="form-control" id="inputBroj">
-                        </div>
 
-                        <div class="form-group col-md-2">
-                            <label for="inputCCV">CCV</label>
-                            <input type="text" class="form-control" id="inputCCV">
-                        </div>
-                        <div class="form-group col-md-2">
-                            <label for="inputVazi">Važi do</label>
-                            <input type="text" class="form-control" id="inputVazi">
-                        </div>
+            <div class="collapse mt-3" id="collapseExample">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputIme">Ime</label>
+                        <input name="fname" type="text" class="form-control" id="inputIme">
                     </div>
-                    <div class="form-group">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                            <label class="form-check-label" for="gridCheck">
-                                Zapamti za sledeću transakciju
-                            </label>
-                        </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPrezime">Prezime</label>
+                        <input type="text" class="form-control" id="inputPrezime">
                     </div>
-                    <button onclick="myFunction()" class="btn">Izvrši transakciju</button>
-                    <p id="potvrda" class="text-danger"></p>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputAdresa">Adresa</label>
+                        <input type="text" class="form-control" id="inputAdresa">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputGrad">Grad</label>
+                        <input type="text" class="form-control" id="inputGrad">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputPostanskiBroj">Postanski broj</label>
+                        <input type="text" class="form-control" id="inputPostanskiBroj">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputNacin">Način plaćanja</label>
+                        <select id="inputNacin" class="form-control">
+                            <option selected>Odaberite</option>
+                            <option>VISA</option>
+                            <option>MASTER CARD</option>
+                            <option>PAYPAL</option>
+                            <option>MAESTRO</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputBroj">Broj kartice</label>
+                        <input type="text" class="form-control" id="inputBroj">
+                    </div>
+
+                    <div class="form-group col-md-2">
+                        <label for="inputCCV">CCV</label>
+                        <input type="text" class="form-control" id="inputCCV">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="inputVazi">Važi do</label>
+                        <input type="text" class="form-control" id="inputVazi">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Zapamti za sledeću transakciju
+                        </label>
+                    </div>
+                </div>
+                <button onclick="myFunction()" class="btn">Izvrši transakciju</button>
+                <p id="potvrda" class="text-danger"></p>
             </div>
+
+            <div class="collapse mt-3" id="collapseExample2">
+                <h4>Video uputstvo za upotrebu elektronskog bankarstva u Erste banci</h4>
+                <iframe src="https://www.youtube.com/embed/YQwP7QIKLI0"></iframe>
+            </div>
+
         </div>
 
     </div>
@@ -191,7 +203,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
-    
+
 
 </body>
 

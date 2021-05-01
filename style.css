@@ -27,10 +27,6 @@
 .nav-link:hover{
   color:#42f557;
 }
-.navbar{
-  background-color: #2e9e73;
- 
-}
 .navbar-nav{
     font-family: 'Josefin Sans' , sans-serif;
     font-size: 18px;
@@ -98,7 +94,9 @@ h1{
     border-color: hsl(calc(var(--hue)*360/20),90%,65%);
     padding: 1rem;
     margin: 2rem 0;
+    box-sizing:unset;
   }
+  
   .li-timeline::before {
     content: "";
     background-color: inherit;
@@ -385,6 +383,20 @@ iframe{
   text-decoration: none;
   text-shadow: black 2px 5px;
   color:white
+}
+
+.ser-cont{
+  color:white;
+  font-size: 16pt;
+  font-family: 'Inconsolata', monospace;
+}
+.ser-cont .row{
+  border-top: 2px solid #42f557;
+  padding-top: 10px;
+}
+
+b{
+  color:#42f557
 }
 
 .circles{

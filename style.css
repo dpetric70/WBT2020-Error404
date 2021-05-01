@@ -6,6 +6,7 @@
 .nav-link{
   position: relative;
   padding:0px 10px 0px 10px ;
+  color:white;
 }
 .nav-link:after {
   content: '';
@@ -15,13 +16,19 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #0087ca;
+  background-color: #42f557;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
 .nav-link:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+.nav-link:hover{
+  color:#42f557;
+}
+.navbar{
+  background-color: #2e9e73;
 }
 .navbar-nav{
     font-family: 'Josefin Sans' , sans-serif;

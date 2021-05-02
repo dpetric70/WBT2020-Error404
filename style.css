@@ -496,8 +496,6 @@ b{
   animation-duration: 11s;
 }
 
-
-
 @keyframes animate {
 
   0%{
@@ -512,4 +510,35 @@ b{
       border-radius: 50%;
   }
 
+}
+
+.div-qa h2{
+  text-align: center;
+  color:white;
+}
+.div-qa{
+  color:white;
+  font-size: 14pt;
+}
+.div-qa a{
+  font-size: 16pt;
+  text-decoration: none;
+  color:#42f557;
+}
+.div-qa a:hover{
+  color: #32a852;
+}
+hr{
+ background-color:white 
+}
+.left-qa{
+  width: 70%;
+  float:left;
+}
+.right-qa{
+  width: 30%;
+  float:left;
+}
+.p-qa{
+  text-align: justify;
 }
